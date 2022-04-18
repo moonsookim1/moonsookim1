@@ -129,6 +129,29 @@
     }
 </style>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#first").click(function(){
+            $("#section2").trigger("click");
+        });
+
+        $("#second").toggle(function(){
+            $("#alert").removeClass("alert-error");
+            $("#alert").addClass("alert-info");
+
+        },function(){
+            $("#alert").removeClass("alert-info");
+            $("#alert").addClass("alert-error");
+        });
+
+        $("#third").click(function(){
+            var width = $("#bar").width();
+            $(".bar").width(width+50);
+        });
+
+
+    });   
+</script>
 </body>
 </html>
 
