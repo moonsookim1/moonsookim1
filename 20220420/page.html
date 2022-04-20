@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_click.css">
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" 
+        rel="stylesheet"
+    />
+    <title>StartFront</title>
+    <script src="https://kit.fontawesome.com/9015ef01cc.js" 
+    crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-joint"></i>
+            <a href="">StartFront</a>
+        </div>
+        <ul class="navbar__menu">
+            <li>
+                <a href="#" onclick="location.href='index.html'">Home</a>
+            </li>
+            <li>
+                <a href="#" onclick="location.href='shopping.html'">Gallery</a>
+            </li>
+            <li>
+                <a href="#" onclick="location.href='shopping.html'">Study</a>
+            </li>
+            <li>
+                <a href="#" onclick="location.href='shopping.html'">Q&A</a>
+            </li>   
+            <li>
+                <a href="#" onclick="location.href='index.html'">About</a>
+            </li>
+        </ul>
+        <script>
+            $(function () {
+                $('li > a').click(function (){
+                    $('html, body').animate({scrollTop: $(this.hash).offset.top}, 300);
+                });
+            });
+        </script>
+
+    
+        <ul class="navbar__icons">
+            <li></li><i class="fa-brands fa-instagram-square">
+                <button onclick="window.open('test.html')">text</button >
+            </i></li>
+            <li></li><i class="fa-brands fa-facebook"></i></li>
+        </ul>
+        <a href="#" class="navbar__toggleButton">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+</body>
+
+</html>
