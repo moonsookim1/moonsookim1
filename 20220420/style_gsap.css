@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: black; */
+  background: whitesmoke;
+
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Signika Negative', sans-serif, Arial; */
+  font-family: 'Lobster', sans-serif, Arial;
+  font-weight: 300;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container.grid,
+.container.columns {
+  align-content: stretch;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.letter {
+  text-align: center;
+  color: rgb(53, 41, 85);
+  font-size: 10vmax;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+}
+.container.grid .letter {
+  flex-basis: 50%;
+}
+.container.columns .letter {
+  flex-basis: 25%;
+}
+.start,
+.front {
+  font-size: 5vmax;
+  color: black;
+}
+.start {
+  padding: 2px 1.6vmax;
+  font-weight: 300;
+  display: none;
+}
+.front {
+  padding: 2px 0;
+  font-weight: 300;
+  display: none;
+}
+.container.final .start,
+.container.final .front {
+  display: block;
+}
+.F {
+  background: #64C673;
+}
+.l {
+  background: #1DAF84;
+}
+.i {
+  background: #00968B;
+}
+.p {
+  background: #007B85;
+}
+.container.plain .letter {
+  background: transparent;
+  color: #black;
+  padding: 0;
+}
+
+.logo {
+  position: fixed;
+  width: 60px;
+  bottom: 20px;
+  right: 30px;
+}
