@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: auto;
+            width : 1000px;
+            height: 2000px;
+            border: 10px solid #bcbcbc;
+            border-color: #64C6B5;
+            background-color: #87E0A1;
+        }
+        a.top{
+            position : fixed;
+            left : 50%;
+            bottom: 5%;
+            color : black;
+            font-weight : bold;
+            font-size : 30px;
+            display: none;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function(){
+                if ($(this).scrollTop()>200){
+                    $('.top').delay(1000).fadeIn();
+                }else{
+                    $('.top').fadeOut();
+                }
+            });
+            $('.top').click(function(){
+                $('html, body').animate({scrollTop : 0},400);
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div></div>
+    <a href="#" class ="top">Top</a>
+</body>
+</html>

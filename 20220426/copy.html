@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        jQuery (document).ready(function(){ 
+            let jbDetach;
+            $('#copy').click(function(){
+                jbDetach =$('.b').detach();
+            });
+            $('#paste').click(function (){
+                $('.a').before(jbDetach);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <h1>Moonsoo</h1>
+    <h2 class="a">Moonsoo</h2>
+    <h3 class="b">Kim</h3>
+    <button id="cut">Cut</button>
+    <button id="paste">Paste</button>
+
+</body>
+</html>
