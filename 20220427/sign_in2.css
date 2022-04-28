@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+
+}
+
+body {
+    background-color:  #eeeeee;
+}
+.container {
+    /* max-width: 700px; */
+    margin: auto;
+    width: 200px;
+    /* box-sizing: border-box; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+header{
+    font-size: 3.5rem;
+    color: #eee;
+    background-color :rebeccapurple;
+    /* display: flex;
+    justify-content:space-between; */
+}
+
+section{
+    width: 100%;
+    margin: 10px auto 40px;
+    /* font-weight: 600;
+    font-size:1.5rem; */
+}
+
+section p{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+section input[placeholder]{
+    /* margin: 0.5rem; */
+    padding : 8px;
+    font-size: .8rem;
+    width: 100%;
+    border : .5px solid #ddd;
+    outline: none;
+    transition: box-shadow 
+    .5s;
+}
+section input[placeholder]::placeholder{
+
+    font-size : .8rem;
+}
+
+section input:nth-of-type(1){
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+section input:nth-of-type(2){
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section input[type="checkbox"]
+{
+    margin-top: .5rem;
+    transform: scale(.7);
+    transform-origin: center center;
+}
+section label{
+    font-size: .7rem;
+    display: inline-block;
+    transform:translateY(-20%);
+    margin-left: -5px;
+}
+section input[type="submit"]{
+    display: block;
+    width: 100%;
+    border: 1px solid skyblue;
+    margin-top: 1.5rem;
+    padding: .3rem;
+    border-radius: 5px;
+    font-size: .8rem;
+    background-color: skyblue;
+    color: white;
+    outline: none;
+    transition: all .5s;
+
+}
+section input[type="submit"]:hover{
+    background-color: deepskyblue;
+    border: 1px solid mediumaquamarine;
+}
+
+section input:nth-of-type(-n+3){
+    box-shadow: 0 0 0 .1rem midnightblue;
+    position: relative;
+
+}
+footer{
+    font-size: .7rem;
+    background-color:gray;
+    border-radius: 2px;
+    
+}
